@@ -3,12 +3,88 @@
 
 .header{
     position: fixed;
-    width: 20%;
     height: 100%;
-    background-color: var( --color-sidebar-bg);
-    flex-direction: column;
-    gap: 25px;
-    justify-content: flex-start;
+    width: 20%;
     align-items: center;
-    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
+
+.header-position{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    background-color: var(--color-sidebar-bg);
+    padding: 30px 20px;
+    align-items: center;
+}
+
+.header-title{
+    color: var(  --color-sidebar-text);
+    font-size: 24px;
+    /* Peso da fonte: NÃO UTILIZA PX */
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-align: center;
+    /* Espaçamento entre as letras */
+    letter-spacing: 0.5px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* Elemento Link: Estilo base dos botões de navegação */
+.nav__link{
+    color: var(--color-sidebar-text);
+    text-decoration: none;
+    font-size: 18px;
+    /* Peso sa fonte (não usar px) */
+    font-weight: 600;
+    padding: 12px 90px;
+    border-radius: 6px;
+    text-align: center;
+    /* Efeito no momento em que o mouse é posicionado */
+    transition: all 0.3s ease-in-out;
+}
+.section-home{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-especialistas{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-especialidades__title{
+    padding: 20px;
+}
+
+.especialidades-section{
+    display: flex;
+    padding-left: 20px;
+}
+.especialidades-section h2{
+    color: var(--color-primary);
+
+}
+.section-equipe{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
